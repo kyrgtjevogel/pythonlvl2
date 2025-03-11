@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weersvoorspelling</title>
+</head>
+<body>
+    <h1>Weersvoorspelling</h1>
+    <form action="/forecast" method="POST">
+        <label for="country">Selecteer een land:</label>
+        <select id="country" name="country" required>
+            <option value="Netherlands">Nederland</option>
+            <option value="Belgium">België</option>
+            <option value="Germany">Duitsland</option>
+            <option value="France">Frankrijk</option>
+            <option value="United States">Verenigde Staten</option>
+        </select><br><br>
+
+        <label for="city">Selecteer een stad:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        <input type="submit" value="Zoek weersvoorspelling">
+    </form>
+</body>
+</html>
